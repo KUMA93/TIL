@@ -1,35 +1,47 @@
 import sys
+input=sys.stdin.readline
 
 n=int(input())
 num=list(map(int, input().split()))
-add, sub, mul, div=map(int, input().split())
-maxR=-sys.maxsize-1
-minR=sys.maxsize
-def DFS(Lv, res):
-    global add, sub, mul, div, maxR, minR
-    if Lv==n-1:
-        maxR=max(maxR, res)
-        minR=min(minR, res)
+optr=list(map(int, input().split()))
+# 숫자를 표시하는 a리스트와 연산자를 표시하는 b리스트를 받아와서 계산해주는 calc함수
+def calc(a, b):
+    tmp=a[0]
+    for i in range(n-1):
+        if b[i]==0:
+            tmp+=a[i+1]
+        elif b[i]==1:
+            tmp-=a[i+1]
+        elif b[i]==2:
+            tmp*=a[i+1]
+        else:
+            # 문제에서 정의한대로 C++14의 기준에 따라 음수일 때는 양수로 만들고 몫을 취하고 다시 음수로 만듬
+            if tmp<0:
+                tmp=-(tmp)
+                tmp//=a[i+1]
+                tmp=-(tmp)
+            else:
+                tmp//=a[i+1]
+    return tmp
+order=[]
+maxR=-2147000000
+minR=2147000000
+def DFS(Lv):
+    global maxR, minR
+    if Lv==n:
+        maxR=max(maxR, calc(num, order))
+        minR=min(minR, calc(num, order))
         return
     else:
-        if add>0:
-            add-=1
-            DFS(Lv+1, res+num[Lv+1])
-            add+=1
-        if sub > 0:
-            sub -= 1
-            DFS(Lv + 1, res - num[Lv+1])
-            sub += 1
-        if mul>0:
-            mul-=1
-            DFS(Lv+1, res*num[Lv+1])
-            mul+=1
-        if div>0:
-            div-=1
-            if res<0:
-                DFS(Lv+1, -(-(res)//num[Lv+1]))
-            else:
-                DFS(Lv+1, res//num[Lv+1])
-            div+=1
-DFS(0, num[0])
-print("{}\n{}".format(maxR,minR))
+        # order라는 리스트에 연산자를 넣는 순열을 구함
+        for i in range(4):
+            if optr[i]>0:
+                optr[i]-=1
+                order.append(i)
+                DFS(Lv+1)
+                optr[i]+=1
+                order.pop()
+
+DFS(1)
+print(maxR)
+print(minR)
