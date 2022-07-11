@@ -1,5 +1,15 @@
 # 내장함수
-## **sum()**: 리스트와 같은 iterable 객체의 모든 원소의 합 반환
+
+[1. sum()](#sum)</br>
+[2. min(), max()](#min-max)</br>
+[3. eval()](#eval)</br>
+[4. sorted(), sort()](#sorted-sort)</br>
+[5. 순열과 조합](#순열과-조합)</br>
+[6. 중복 순열과 중복 조합](#중복순열과-중복조합)</br>
+[7. heapq - heap기능](#heapq---heap기능)</br>
+
+## **sum()**
+* 리스트와 같은 iterable 객체의 모든 원소의 합 반환
   ```python
   res=sum(1,2,3,4)
   print(res)
@@ -20,7 +30,8 @@
   ```
 </br>
 
-## **min(), max()**: 파라미터가 2개 이상 들어 왔을 때 가장 작은/큰 값을 반환
+## **min(), max()** 
+* 파라미터가 2개 이상 들어 왔을 때 가장 작은/큰 값을 반환
   ```python
   res=min(6,8,4,2)
   print(res)
@@ -31,7 +42,8 @@
   ```
 </br>
 
-## **eval()**: 문자열 형태의 수식 계산 결과 반환
+## **eval()**
+* 문자열 형태의 수식 계산 결과 반환
   ```python
   res=eval("(2+5)*3")
   print(res)
@@ -41,7 +53,8 @@
 
 </br>
 
-## **sorted(), sort()**: iterable 객체를 받아서 정렬된 결과를 반환
+## **sorted(), sort()**
+* iterable 객체를 받아서 정렬된 결과를 반환
   ```python
   res=sorted([3,9,6,8]) #기본은 오름차순
   print(res)
@@ -65,33 +78,33 @@
 * **Permutations(arr, r)**: len(arr)가 n일 때 nPr의 모든 결과를 불러온다
 * **combinations(arr, r)**: len(arr)가 n일 때 nCr의 모든 결과를 불러온다
 
-```python
-#Permutations
-from itertools import permutations
-data=['최', '규', '헌']
-res=list(permutations(data, 3))
-print(res)
-```
-```
-[('최', '규', '헌'), ('최', '헌', '규'), ('규', '최', '헌'), ('규', '헌', '최'), ('헌', '최', '규'), ('헌', '규', '최')]
-```
-```python
-#combinations
-from itertools import combinations
-data=['최', '규', '헌']
-res=list(combinations(data, 3))
-print(res)
-```
-```
-[('최', '규', '헌')]
-```
-```python
-res=list(combinations(data, 2))
-print(res)
-```
-```
-[('최', '규'), ('최', '헌'), ('규', '헌')]
-```
+  ```python
+  #Permutations
+  from itertools import permutations
+  data=['최', '규', '헌']
+  res=list(permutations(data, 3))
+  print(res)
+  ```
+  ```
+  [('최', '규', '헌'), ('최', '헌', '규'), ('규', '최', '헌'), ('규', '헌', '최'), ('헌', '최', '규'), ('헌', '규', '최')]
+  ```
+  ```python
+  #combinations
+  from itertools import combinations
+  data=['최', '규', '헌']
+  res=list(combinations(data, 3))
+  print(res)
+  ```
+  ```
+  [('최', '규', '헌')]
+  ```
+  ```python
+  res=list(combinations(data, 2))
+  print(res)
+  ```
+  ```
+  [('최', '규'), ('최', '헌'), ('규', '헌')]
+  ```
 </br>
 
 ## **중복순열과 중복조합**
@@ -100,63 +113,63 @@ print(res)
 * **combinations_with_replacement(arr, r)**: len(arr)가 n일 때 nHr의 모든 결과를 불러온다
   > combinations에서 원소를 중복하여 r만큼 데이터를 뽑는다.
 
-```python
-#product
-from itertools import combinations
-data=['최', '규', '헌']
-res=list(product(data, repeat=3))
-print(res)
-```
-```
-[('최', '최'), ('최', '규'), ('최', '헌'), ('규', '최'), ('규', '규'), ('규', '헌'), ('헌', '최'), ('헌', '규'), ('헌', '헌')]    
-```
+  ```python
+  #product
+  from itertools import combinations
+  data=['최', '규', '헌']
+  res=list(product(data, repeat=3))
+  print(res)
+  ```
+  ```
+  [('최', '최'), ('최', '규'), ('최', '헌'), ('규', '최'), ('규', '규'), ('규', '헌'), ('헌', '최'), ('헌', '규'), ('헌', '헌')]    
+  ```
 
-```python
-#combinations_w_r
-from itertools import combinations_with_replacement
-data=['최', '규', '헌']
-res=list(combinations_with_replacement(data, 2))
-print(res)
-```
-```
-[('최', '최'), ('최', '규'), ('최', '헌'), ('규', '규'), ('규', '헌'), ('헌', '헌')]
-```
+  ```python
+  #combinations_w_r
+  from itertools import combinations_with_replacement
+  data=['최', '규', '헌']
+  res=list(combinations_with_replacement(data, 2))
+  print(res)
+  ```
+  ```
+  [('최', '최'), ('최', '규'), ('최', '헌'), ('규', '규'), ('규', '헌'), ('헌', '헌')]
+  ```
 </br>
 
-## **heapq - heqp기능**
+## **heapq - heap기능**
 * 최댓값과 최솟값을 찾는 연산을 빠르게 하기 위해 고안된 완전이진트리를 기본으로 한다.
 * **heapq.heappush(heap, item)** -item을 heap에 삽입 
 * **heapq.heappop(heap)** -힙에서 가장 작은 원소를 pop&리턴
 * **heapq.heapify(list)** -list를 heap으로 변환한다, (O(N))
-```python
-import heapq
-heap=[]
-heapq.heappush(heap, 44)
-heapq.heappush(heap, 22)
-heapq.heappush(heap, 33)
-print(heap)
-```
-```
-[22, 44, 33]
-```
-```python
-print(heapq.heappop(heap))
-print(heapq.heappop(heap))
-print(heapq.heappop(heap))
-```
-```
-22
-33
-44
-```
-```python
-data=[11, 33, 66]
-heapq.heapify(data)
-heapq.heappush(data, 22)
-print(data)
-print(heapq.heappop(data))
-```
-```
-[11, 22, 66, 33]
-11
-```
+  ```python
+  import heapq
+  heap=[]
+  heapq.heappush(heap, 44)
+  heapq.heappush(heap, 22)
+  heapq.heappush(heap, 33)
+  print(heap)
+  ```
+  ```
+  [22, 44, 33]
+  ```
+  ```python
+  print(heapq.heappop(heap))
+  print(heapq.heappop(heap))
+  print(heapq.heappop(heap))
+  ```
+  ```
+  22
+  33
+  44
+  ```
+  ```python
+  data=[11, 33, 66]
+  heapq.heapify(data)
+  heapq.heappush(data, 22)
+  print(data)
+  print(heapq.heappop(data))
+  ```
+  ```
+  [11, 22, 66, 33]
+  11
+  ```
