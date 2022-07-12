@@ -1,12 +1,12 @@
 # 내장함수
 
-[1. sum()](#sum)</br>
-[2. min(), max()](#min-max)</br>
-[3. eval()](#eval)</br>
-[4. sorted(), sort()](#sorted-sort)</br>
-[5. 순열과 조합](#순열과-조합)</br>
-[6. 중복 순열과 중복 조합](#중복순열과-중복조합)</br>
-[7. heapq - heap기능](#heapq---heap기능)</br>
+> * [sum()](#sum)</br>
+> * [min(), max()](#min-max)</br>
+> * [eval()](#eval)</br>
+> * [sorted(), sort()](#sorted-sort)</br>
+> * [순열과 조합](#순열과-조합)</br>
+> * [중복 순열과 중복 조합](#중복순열과-중복조합)</br>
+> * [heapq - heap기능](#heapq---heap기능)</br>
 
 ## **sum()**
 * 리스트와 같은 iterable 객체의 모든 원소의 합 반환
