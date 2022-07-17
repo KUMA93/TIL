@@ -1,12 +1,10 @@
-# 내장함수
+# **내장함수**
 
 > * [sum()](#sum)</br>
 > * [min(), max()](#min-max)</br>
 > * [eval()](#eval)</br>
 > * [sorted(), sort()](#sorted-sort)</br>
-> * [순열과 조합](#순열과-조합)</br>
-> * [중복 순열과 중복 조합](#중복순열과-중복조합)</br>
-> * [heapq - heap기능](#heapq---heap기능)</br>
+> * [find(), startswith(), endswith()](#find-startswith-endswith)</br>
 
 ## **sum()**
 * 리스트와 같은 iterable 객체의 모든 원소의 합 반환
@@ -73,6 +71,94 @@
   ```
 </br>
  
+## **find(), startswith(), endswith()**
+* find(찾을문자, 찾기 시작할 위치)
+  ```python
+  S='aaadcewsdg'
+  print(S.find('a')) # 첫 번째로 일치하는 값의 인덱스 값을 리턴
+  print(S.find('z')) # 찾는 문자가 없을 경우 -1 리턴
+  print(S.find('cew')) # 문자열을 찾을 수도 있음, 해당 문자열의 첫 문자의 인덱스 값 리턴
+  ```
+  ```
+  0
+  -1
+  4
+  ```
+* startswith(시작하는 문자, 시작 지점)
+  ```python
+  S='aaadcewsdg'
+  print(S.startswith('a')) # 시작지점 값을 입력하지 않으면 디폴트는 0
+  print(S.startswith('aaa')) # 문자열로 검사할 수도 있음
+  print(S.startswith('c', 4)) # 시작지점의 문자가 해당값인지 검사
+  print(S.startswith('x'))
+  ```
+  ```
+  True
+  True
+  True
+  False
+  ```
+* endswith(끝나는 문자, 문자열의 시작, 문자열의 끝)
+  ```python
+  S='aaadcewsdg'
+  print(S.endswith('g')) # 시작, 끝 지점을 입력하지 않으면 디폴트는 문자열 전체
+  print(S.endswith('dg')) # 문자열로 검사할 수도 있음
+  print(S.endswith('c', 2, 4)) # 해당 인덱스내에서 끝나는 문자 검사
+  print(S.endswith('c', 2, 5)) # 문자열 범위는 인덱스값 2이상 5미만이다
+  ```
+  ```
+  True
+  True
+  False
+  True
+  ```
+<br/><br/><br/>
+
+
+# **모듈**
+> * [heapq - heap기능](#heapq---heap기능)</br>
+> * [순열과 조합](#순열과-조합)</br>
+> * [중복 순열과 중복 조합](#중복순열과-중복조합)</br>
+
+
+## **heapq - heap기능**
+* 최댓값과 최솟값을 찾는 연산을 빠르게 하기 위해 고안된 완전이진트리를 기본으로 한다.
+* **heapq.heappush(heap, item)** -item을 heap에 삽입 
+* **heapq.heappop(heap)** -힙에서 가장 작은 원소를 pop&리턴
+* **heapq.heapify(list)** -list를 heap으로 변환한다, (O(N))
+  ```python
+  import heapq
+  heap=[]
+  heapq.heappush(heap, 44)
+  heapq.heappush(heap, 22)
+  heapq.heappush(heap, 33)
+  print(heap)
+  ```
+  ```
+  [22, 44, 33]
+  ```
+  ```python
+  print(heapq.heappop(heap))
+  print(heapq.heappop(heap))
+  print(heapq.heappop(heap))
+  ```
+  ```
+  22
+  33
+  44
+  ```
+  ```python
+  data=[11, 33, 66]
+  heapq.heapify(data)
+  heapq.heappush(data, 22)
+  print(data)
+  print(heapq.heappop(data))
+  ```
+  ```
+  [11, 22, 66, 33]
+  11
+  ```
+
 ## **순열과 조합** 
 * 기본적으로 파이썬에서 제공하는 함수를 이용해 손쉽게 순열과 조합을 구할 수 있지만 연습 과정에서는 직접 구해본다.
 * **Permutations(arr, r)**: len(arr)가 n일 때 nPr의 모든 결과를 불러온다
@@ -136,40 +222,4 @@
   ```
 </br>
 
-## **heapq - heap기능**
-* 최댓값과 최솟값을 찾는 연산을 빠르게 하기 위해 고안된 완전이진트리를 기본으로 한다.
-* **heapq.heappush(heap, item)** -item을 heap에 삽입 
-* **heapq.heappop(heap)** -힙에서 가장 작은 원소를 pop&리턴
-* **heapq.heapify(list)** -list를 heap으로 변환한다, (O(N))
-  ```python
-  import heapq
-  heap=[]
-  heapq.heappush(heap, 44)
-  heapq.heappush(heap, 22)
-  heapq.heappush(heap, 33)
-  print(heap)
-  ```
-  ```
-  [22, 44, 33]
-  ```
-  ```python
-  print(heapq.heappop(heap))
-  print(heapq.heappop(heap))
-  print(heapq.heappop(heap))
-  ```
-  ```
-  22
-  33
-  44
-  ```
-  ```python
-  data=[11, 33, 66]
-  heapq.heapify(data)
-  heapq.heappush(data, 22)
-  print(data)
-  print(heapq.heappop(data))
-  ```
-  ```
-  [11, 22, 66, 33]
-  11
-  ```
+
