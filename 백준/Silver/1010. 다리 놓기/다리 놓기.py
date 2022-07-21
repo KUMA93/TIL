@@ -1,11 +1,11 @@
+import sys
+input=sys.stdin.readline
+
 t=int(input())
-def factorial(x):
-    res=1
-    while x:
-        res*=x
-        x-=1
-    return res
 for i in range(t):
     n, m=map(int, input().split())
-    res=factorial(m)//(factorial(n)*factorial(m-n))
-    print(res)
+    dp=[0]*(m+1) # m에 따른 최대 가짓수
+    dp[n]=1
+    for i in range(n+1, m+1):
+        dp[i]=dp[i-1]*i//(i-n)
+    print(dp[-1])
