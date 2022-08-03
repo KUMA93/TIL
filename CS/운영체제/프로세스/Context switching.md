@@ -32,5 +32,5 @@
 * 때문에 컨텍스트 스위칭 속도가 훨씬 빠르다.
 
 ## References
-[으뜸별](https://beststar-1.tistory.com/26)
-[Crocus](https://www.crocus.co.kr/1364)
+* [으뜸별](https://beststar-1.tistory.com/26)
+* [Crocus](https://www.crocus.co.kr/1364)

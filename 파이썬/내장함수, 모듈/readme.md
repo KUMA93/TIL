@@ -201,7 +201,7 @@
 
   ```python
   #product
-  from itertools import combinations
+  from itertools import product
   data=['최', '규', '헌']
   res=list(product(data, repeat=3))
   print(res)
