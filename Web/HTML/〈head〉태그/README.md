@@ -6,6 +6,6 @@
 * 다음은 〈head〉 태그 내부에 들어가는 대표적인 태그들의 목록이다.
   * [〈title〉](〈title〉태그.md)
   * [〈meta〉](〈meta〉태그.md)
-  * [〈link〉]()
-  * [〈style〉]()
+  * [〈link〉](../../CSS/CSS%20%ED%8C%8C%EC%9D%BC%20%EB%B6%84%EB%A6%AC/)
+  * [〈style〉](../../CSS/선택자/id,%20class%20선택자.md)
   * 〈script〉

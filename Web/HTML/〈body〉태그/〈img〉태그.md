@@ -27,7 +27,7 @@
     <body>
         <p>
             이미지가 정상적으로 삽입 된 경우<br>
-            <img src="../../img/logo_black.png" width="245">
+            <img src="../../../img/logo_black.png" width="245">
         </p>	
         <p>
             없는 이미지가 삽입 된 경우<br>
