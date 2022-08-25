@@ -48,4 +48,4 @@ public class StudentTest {
 ```
 
 ## 다음 강의
-[05. 인스턴스 생성과 힙 메모리](../5.%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%ED%9E%99%20%EB%A9%94%EB%AA%A8%EB%A6%AC/)
+[05. 인스턴스 생성과 힙 메모리](../05.%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%ED%9E%99%20%EB%A9%94%EB%AA%A8%EB%A6%AC/)

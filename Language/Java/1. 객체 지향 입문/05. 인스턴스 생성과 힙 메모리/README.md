@@ -51,4 +51,4 @@
 ```
 
 ## 다음 강의
-[06. 생성자에 대해 알아봅시다 (constructor)](../6.%20%EC%83%9D%EC%84%B1%EC%9E%90%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%95%8C%EC%95%84%EB%B4%85%EC%8B%9C%EB%8B%A4%20(constructor)/)
+[06. 생성자에 대해 알아봅시다 (constructor)](../06.%20%EC%83%9D%EC%84%B1%EC%9E%90%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%95%8C%EC%95%84%EB%B4%85%EC%8B%9C%EB%8B%A4%20(constructor)/)

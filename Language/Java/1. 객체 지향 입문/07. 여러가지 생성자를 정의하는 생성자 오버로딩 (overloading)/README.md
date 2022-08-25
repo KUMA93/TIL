@@ -55,4 +55,4 @@ public class UserInfoTest {
 
 
 ## 다음 강의 
-[08. 복습해봅시다 (객체 구현하기)](../8.%20%EB%B3%B5%EC%8A%B5%ED%95%B4%EB%B4%85%EC%8B%9C%EB%8B%A4%20(%EA%B0%9D%EC%B2%B4%20%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)/)
+[08. 복습해봅시다 (객체 구현하기)](../08.%20%EB%B3%B5%EC%8A%B5%ED%95%B4%EB%B4%85%EC%8B%9C%EB%8B%A4%20(%EA%B0%9D%EC%B2%B4%20%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)/)

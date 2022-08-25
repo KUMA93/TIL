@@ -74,4 +74,4 @@ public class StudentTest {
 }
 ```
 ## 다음 강의
-[07. 여러가지 생성자를 정의하는 생성자 오버로딩 (overloading)](./../7.%20여러가지%20생성자를%20정의하는%20생성자%20오버로딩%20(overloading)/README.md)
+[07. 여러가지 생성자를 정의하는 생성자 오버로딩 (overloading)](../07.%20%EC%97%AC%EB%9F%AC%EA%B0%80%EC%A7%80%20%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9%20(overloading)/)
