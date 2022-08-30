@@ -20,7 +20,7 @@ interface 인터페이스 이름{
 
 ## 인터페이스 정의와 구현
 
-![calc](../img/calc.png)
+![calc](../img/calc.png)i
 
 Calc.java
 ```java
