@@ -17,8 +17,7 @@ Sell.java
 public interface Sell {
 
 	void sell();
-	
-	
+		
 }
 ```
 
