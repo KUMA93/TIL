@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3306/gau_jpa_study?userSSL=false&useUnicode=true&serverTimezone=Asia/Seoul"
+    username: root
+    password: root
+    hikari:
+      auto-commit: false
+      connection-test-query: SELECT 1
+      minimum-idle: 10
+      maximum-pool-size: 50
+      transaction-isolation: TRANSACTION_READ_UNCOMMITTED
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+#    org.hibernate:type: trace

@@ -2,7 +2,7 @@ import sys
 input=sys.stdin.readline
 
 while True:
-    input_list = list(map(int, sys.stdin.readline().split()))
+    input_list = list(map(int, input().split()))
     if input_list[0] == 0:
         break
     input_list.append(0)
