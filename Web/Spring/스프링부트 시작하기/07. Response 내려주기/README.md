@@ -8,7 +8,8 @@
 
 2. JSON으로 내려주는 경우 -> 이 경우가 주를 이룬다.
    
-   2-1. 
+   2-1.  
+
    ![Response Send2](../img/ResponseSend2.png)
    ![Response Response2](../img/ResponseResponse2.png)
    ```java
@@ -17,7 +18,8 @@
        return user;
    }
    ```
-   2-2.
+   2-2.  
+   
    ![Response Response3](../img/ResponseResponse3.png)
    ```java
    @PutMapping("/put")
