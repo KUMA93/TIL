@@ -18,8 +18,8 @@
        return user;
    }
    ```
-   2-2.  
-   
+   2-2. ResponseEntity : Body의 내용을 Object로 설정. 상황에 따라서 Http Status Code 설정.
+
    ![Response Response3](../img/ResponseResponse3.png)
    ```java
    @PutMapping("/put")
