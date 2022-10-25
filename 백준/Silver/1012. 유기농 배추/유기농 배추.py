@@ -13,6 +13,19 @@ def dfs(x, y):
         if 0<=xx<n and 0<=yy<m and board[xx][yy]==1 and not ch[xx][yy]:
             dfs(xx, yy)
 
+def bfs(x, y):
+    dq.append((x, y))
+    ch[x][y] = 1
+
+    while dq:
+        x, y = dq.popleft()
+        for i in range(4):
+            xx = x+dx[i]
+            yy = y+dy[i]
+            if 0<=xx<n and 0<=yy<m and board[xx][yy]==1 and not ch[xx][yy]:
+                dq.append((xx, yy))
+                ch[xx][yy] = 1
+            
 for _ in range(int(input())):
     m, n, k = map(int, input().split())
     board = [[0]*m for _ in range(n)]
