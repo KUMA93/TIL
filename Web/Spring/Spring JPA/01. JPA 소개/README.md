@@ -105,7 +105,7 @@ member1 == member2; //같다.
 
 ### JPA는 애플리케이션과 JDBC 사이에서 동작
   ![JPA 동작](../img/JPA동작.png)
-* JPA 동작 - 저장
+* JPA 동작 - 저장     
 ![JPA 동작 - 저장](../img/JPA동작저장.png)
 * JPA 동작 - 조회
 ![JPA 동작 - 조회](../img/JPA동작조회.png)
