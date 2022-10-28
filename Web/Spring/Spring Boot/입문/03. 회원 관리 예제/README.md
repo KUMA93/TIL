@@ -82,71 +82,38 @@
 * 하지만 이런 방법은 준비하고 실행하는데 오래 걸리고 반복 실행하기 어렵고 여러 테스트를 한번에 실행하기 어렵다는 단점이 있다.
 * 자바는 JUnit이라는 프레임워크로 테스트를 실행해서 이러한 문제를 해결한다.
     src/test/java/MemoryMemberRepositoryTest.java  
-
     ![테스트 케이스](../img/테이스트케이스%20자료구조.png)
+* [코드](../hello-spring\src\test\java\hello\hellospring\repository\MemoryMemberRepositoryTest.java)
+## 회원 서비스 개발
+* Service는 Repository보다 비즈니스에 가깝게 네이밍 해야 한다.
+* 회원 가입을 수행하는 join 메소드 안에서 사용할 중복을 확인할validateDuplicateMember 메소드를 작성 해준다.
+* 전체 회원 정보를 조회하는 findMembers 메소드는 위의 리포지토리에서 구현한 findAll()을 사용한다.
+* [코드](../hello-spring/src/main/java/hello/hellospring/service/MemberService.java)
+
+## 회원 서비스 테스트
+* 테스트 하고자 하는 클래스에서 "***ctrl + shift + t***"로 테스트 간편하게 생성 가능
+* 테스트에서는 한글로 작성해도 괜찮다. -> 프로덕트 코드가 아닌 이상 직관적으로 한글로 사용하는 경우가 많다.
+* "***given, when, then***"패턴으로 테스트를 짜는 연습을 해야한다.
+* 각 테스트의 데이터 독립성을 보장하기 위해 리포지토리 테스트에서 사용한 메모리 clearstore() 메소드를 @AfterEach 어노테이션과 함께 적용해주어야 한다.
+* 기존 MemberService.java 의 memberRepository 선언부
     ```java
-    package hello.hellospring.repository;
-
-    import hello.hellospring.domain.Member;
-    import org.junit.jupiter.api.AfterEach;
-    import org.junit.jupiter.api.Assertions;
-    import org.junit.jupiter.api.Test;
-
-    import java.util.List;
-
-    import static org.assertj.core.api.Assertions.assertThat;
-
-    class MemoryMemberRepositoryTest {
-
-        MemoryMemberRepository repository = new MemoryMemberRepository();
-
-        @AfterEach // 각 테스트가 끝나고 DB를 비워줄 필요가 있다. MemoryMemberRepository 클래스에 clearStore() 메소드를 구현하고 각테스트 마지막에 불러온다. @AfterEach어노테이션은 각 테스트 종료될 때마다 기능을 실행시키는 역할을 한다.
-        public void afterEach() {
-            repository.clearStore();
-        }
-
-        @Test
-        public void save() {
-            Member member = new Member();
-            member.setName("spring");
-
-            repository.save(member);
-
-            Member result = repository.findById(member.getId()).get();
-
-            System.out.println("result = " + (result == member)); // #1 단순 출력.
-            Assertions.assertEquals(member, result); // #2 Assertion.assertEquals() 사용. 출력되는 내용은 없지만 값이 다르다면 오류코드가 출력된다.
-            assertThat(member).isEqualTo(result); // #3 Assertions.assertThat() 사용
-        }
-
-        @Test
-        public void findByName() {
-            Member member1 = new Member();
-            member1.setName("spring1");
-            repository.save(member1);
-
-            Member member2 = new Member();
-            member2.setName("spring2");
-            repository.save(member2);
-
-            Member result = repository.findByName("spring1").get();
-
-            assertThat(result).isEqualTo(member1); // 마찬가지로 출력되는 내용이 없지만 값이 다르다면 오류코드가 출력
-        }
-
-        @Test
-        public void findAll() {
-            Member member1 = new Member();
-            member1.setName("spring1");
-            repository.save(member1);
-
-            Member member2 = new Member();
-            member2.setName("spring2");
-            repository.save(member2);
-
-            List<Member> result = repository.findAll();
-
-            assertThat(result.size()).isEqualTo(2);
-        }
+    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    ```
+* DI(Dependency Injection) 가능하게 변경한 MemberService.java의 선언부
+    ```java
+    private final MemberRepository memberRepository;
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
     }
     ```
+* @BeforeEach 어노테이션을 통해 각 테스트 실행 전에 호출되어 테스트가 서로 영향이 없도록 항상 새로운 객체를 생성하고 의존관계도 새로 맺어준다.
+```java
+@BeforeEach
+public void beforeEach() {
+    memberRepository = new MemoryMemberRepository();
+    memberService = new MemberService(memberRepository);
+}
+```
+
+
+* [코드](../hello-spring/src/test/java/hello/hellospring/service/MemberServiceTest.java)
