@@ -125,8 +125,38 @@ member1 == member2; //같다.
   * 조회: Member member = jpa.find(memberId)
   * 수정: member.setName("변경할 이름")
   * 삭제: jpa.remove(member)
-* 유지보수
+* 유지보수   
+
+  member 테이블에 tel 속성 추가할 때   
+  
+  jpa를 사용하지 않고 쿼리문으로 처리할 경우
+  ![jpa미사용](../img/유지보수jpa미사용.png)
+  jpa를 사용할 경우
+  ![jpa사용](../img/유지보수jpa사용.png)
 * 패러다임의 불일치 해결
+  * 개발자는 자바를 통해 저장, 조회, 수정, 삭제를 수행하고 jpa는 이에 맞는 쿼리문을 날려준다.
+  * 연관관계와 객체 그래프 탐색에 있어서 자유로움이 보장됨
+    ```java
+    member.setTeam(team);
+    jpa.persist(member);
+
+    Member member = jpa.find(Member.class, memberId);
+    Team team = member.getTeam();
+    ```
+  * 신뢰할 수 있는 엔티티, 계층
+  * JPA를 통해 비교하면 동일한 트랙잭션에서 조회한 엔티티는 같음을 보장한다.
+
 * 성능
+  * 1차 캐시와 동일성 보장
+    * 같은 트랜잭션 안에서 같은 엔티티를 반환 -> 약간의 조회 성능 향상
+    * DB Isolation Level이 Read Commit 이어도 애플리케이션에서 Repeatable Read 보장
+  * 트랜잭션을 지원하는 쓰기 지연
+    * 트랜잭션을 커밋할 때까지 INSERT SQL을 모음
+    * JDBC BATCH SQL 기능을 사용해서 한번에 SQL 전송
+  * 지연 로딩
+    * 지연 로딩: 객체가 실제 사용될 때 로딩
+    * 즉시 로딩: JOIN SQL로 한번에 연관된 객체까지 미리 조회
+    * JPA는 옵션을 통해 자유롭게 전환할 수 있다.
+    ![로딩](../img/지연로딩즉시로딩.png)
 * 데이터 접근 추상화와 벤더 독립성
 * 표준
