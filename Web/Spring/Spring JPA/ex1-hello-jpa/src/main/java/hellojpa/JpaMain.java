@@ -43,14 +43,29 @@ public class JpaMain {
 //            Member findMember = em.find(Member.class, 1L);
 //            findMember.setName("HelloJPA");
 
-            List<Member> result = em.createQuery("select m from Member as m", Member.class)
-                    .setFirstResult(5)
-                    .setMaxResults(8)
-                    .getResultList();
 
-            for (Member member : result) {
-                System.out.println("member.name = " + member.getName());
-            }
+            // JPQL
+//            List<Member> result = em.createQuery("select m from Member as m", Member.class)
+//                    .setFirstResult(5)
+//                    .setMaxResults(8)
+//                    .getResultList();
+//
+//            for (Member member : result) {
+//                System.out.println("member.name = " + member.getName());
+//            }
+
+            // 비영속 상태, 단순 멤버 객체 생성
+//            Member member = new Member();
+//            member.setId(100L);
+//            member.setName("HelloJPA");
+
+            // 영속 상태, persist에서 DB에 쿼리가 나가는 것이 아니다.(BEFORE와 AFTER사이에 뭐리문이 위치하지 않고 나중에 나온다.)
+//            System.out.println("=== BEFORE ===");
+//            em.persist(member);
+//            System.out.println("=== AFTER ===");
+
+
+
 
             tx.commit();
         } catch (Exception e) {
