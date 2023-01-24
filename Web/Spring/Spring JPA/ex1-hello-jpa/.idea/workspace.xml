@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17af6de4-b19b-411b-adf2-295e1ec5eac0" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/../03. 영속성 관리 - 내부 동작 방식/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../03. 영속성 관리 - 내부 동작 방식/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpashop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring Boot/입문/04. 스프링 빈과 의존관계/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring Boot/입문/04. 스프링 빈과 의존관계/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring Boot/입문/05. 회원 관리 예제 - 웹 MVC 개발/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring Boot/입문/05. 회원 관리 예제 - 웹 MVC 개발/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring Boot/입문/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring Boot/입문/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/src/main/java/hello/hellospring/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/src/main/java/hello/hellospring/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/src/main/java/hello/hellospring/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/src/main/java/hello/hellospring/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/src/main/java/hello/hellospring/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/src/main/java/hello/hellospring/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/src/main/java/hello/hellospring/service/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring Boot/입문/hello-spring/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../04. 엔티티 매핑/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../04. 엔티티 매핑/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05. 연관관계 매핑 기초/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../05. 연관관계 매핑 기초/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/JpaMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hellojpa/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hellojpa/Member.class" afterDir="false" />
     </list>
