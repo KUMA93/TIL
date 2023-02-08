@@ -58,12 +58,8 @@ public class Solution {
 			}
 			int fx = x + dx[phase];
 			int fy = y + dy[phase];
-			
-			if (board[fx][fy] !=0) {
-				return;
-			}else {
-				snail (fx, fy);
-			}	
+			snail (fx, fy);
+				
 		}
 	}
 	
