@@ -33,9 +33,9 @@ public class Main {
 
         for (int i = 0; i < K; i++) {
             st = new StringTokenizer(br.readLine());
-            command[i][0] = Integer.parseInt(st.nextToken()) - 1;
-            command[i][1] = Integer.parseInt(st.nextToken()) - 1;
-            command[i][2] = Integer.parseInt(st.nextToken());
+            for (int j = 0; j < 3; j++) {
+                command[i][j] = Integer.parseInt(st.nextToken());
+            }
         }
         permutation(0);
 
@@ -45,14 +45,11 @@ public class Main {
     // (r, c) 중심으로 s 범위의 사각형 시계 방향 회전
     // (r-s, c-s) ~ (r-s, c+s) / (r-s, c+s) ~ (r+s, c+s) / (r+s, c+s) ~ (r+s, c-s) / (r+s, c-s) ~ (r-s, c-s)
     // s가 0인 경우 중심 하나만 고려대상이라 안 돌아도 됨
-    public static void turn(int[] res) {
-        // 원본 보드를 훼손하면 다른 경우에 문제가 생기기 때문에 보드의 원소만 tmp에 그대로 복사
-        int[][] tmpBoard = copyBoard();
-        
+    public static void turn(int[] res, int[][] tmpBoard) {
         for(int k = 0; k < K; k++) {
-            int R = command[perRes[k]][0];
-            int C = command[perRes[k]][1];
-            int S = command[perRes[k]][2];
+            int R = command[res[k]][0] - 1;
+            int C = command[res[k]][1] - 1;
+            int S = command[res[k]][2];
 
             for (int s = 1; s < S + 1; s++) {
 
@@ -93,7 +90,9 @@ public class Main {
     // 명령어 순서 정하는 순열 제조기
     public static void permutation(int cnt) {
         if(cnt == K) {
-            turn(perRes);
+            // 원본 보드를 훼손하면 다른 경우에 문제가 생기기 때문에 보드의 원소만 tmp에 그대로 복사
+            int[][] tmpBoard = copyBoard();
+            turn(perRes, tmpBoard);
             return;
         }
         for(int i=0; i<K; i++) {
