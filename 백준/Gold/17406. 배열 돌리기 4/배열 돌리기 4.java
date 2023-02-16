@@ -45,35 +45,39 @@ public class Main {
     // (r, c) 중심으로 s 범위의 사각형 시계 방향 회전
     // (r-s, c-s) ~ (r-s, c+s) / (r-s, c+s) ~ (r+s, c+s) / (r+s, c+s) ~ (r+s, c-s) / (r+s, c-s) ~ (r-s, c-s)
     // s가 0인 경우 중심 하나만 고려대상이라 안 돌아도 됨
-    public static void turn(int[] res, int[][] tmpBoard) {
+    public static void turn(int[] perRes, int[][] tmpBoard) {
         for(int k = 0; k < K; k++) {
-            int R = command[res[k]][0] - 1;
-            int C = command[res[k]][1] - 1;
-            int S = command[res[k]][2];
+            int R = command[perRes[k]][0] - 1;
+            int C = command[perRes[k]][1] - 1;
+            int S = command[perRes[k]][2];
 
             for (int s = 1; s < S + 1; s++) {
+                int cs = C + s;
+                int sc = C - s;
+                int rs = R + s;
+                int sr = R - s;
 
-                int upTmp = tmpBoard[R - s][C + s];
-                for (int y = C + s; y > C - s; y--) {
-                    tmpBoard[R - s][y] = tmpBoard[R - s][y - 1];
+                int upTmp = tmpBoard[sr][cs];
+                for (int y = cs; y > sc; y--) {
+                    tmpBoard[sr][y] = tmpBoard[sr][y - 1];
                 }
 
-                int rightTmp = tmpBoard[R + s][C + s];
-                for (int x = R + s; x > R - s; x--) {
-                    tmpBoard[x][C + s] = tmpBoard[x - 1][C + s];
+                int rightTmp = tmpBoard[rs][cs];
+                for (int x = rs; x > sr; x--) {
+                    tmpBoard[x][cs] = tmpBoard[x - 1][cs];
                 }
-                tmpBoard[R - s + 1][C + s] = upTmp;
+                tmpBoard[sr + 1][cs] = upTmp;
 
                 int downTmp = tmpBoard[R + s][C - s];
-                for (int y = C - s; y < C + s; y++) {
-                    tmpBoard[R + s][y] = tmpBoard[R + s][y + 1];
+                for (int y = sc; y < cs; y++) {
+                    tmpBoard[rs][y] = tmpBoard[rs][y + 1];
                 }
-                tmpBoard[R + s][C + s - 1] = rightTmp;
+                tmpBoard[rs][cs - 1] = rightTmp;
 
-                for (int x = R - s; x < R + s; x++) {
-                    tmpBoard[x][C - s] = tmpBoard[x + 1][C - s];
+                for (int x = sr; x < rs; x++) {
+                    tmpBoard[x][sc] = tmpBoard[x + 1][sc];
                 }
-                tmpBoard[R + s - 1][C - s] = downTmp;
+                tmpBoard[rs - 1][sc] = downTmp;
             }
         }
         // 행렬 합 계산
