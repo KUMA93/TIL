@@ -2,13 +2,13 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class Main {
 	static int N, M;
 	static int[][] board;
-	static LinkedList<int[]> house, chicken;
+	static ArrayList<int[]> house, chicken;
 	static int[] check;
 	static int res = Integer.MAX_VALUE;
 	
@@ -21,8 +21,8 @@ public class Main {
 		
 		board = new int[N][N];
 		check = new int[M];
-		house = new LinkedList<>();
-		chicken = new LinkedList<>();
+		house = new ArrayList<>();
+		chicken = new ArrayList<>();
 		
 		for (int i = 0; i < N; i++) {
 			st = new StringTokenizer(br.readLine());
