@@ -29,7 +29,7 @@ public class Main {
 			return;
 		}
 		if (!(R >= r && R < r+size && C >= c && C < c+size)) {
-			cnt += (int)Math.pow(size, 2);
+			cnt += size*size;
 			return;
 		}
 		int half = size / 2;
