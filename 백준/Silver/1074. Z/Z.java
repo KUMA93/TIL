@@ -16,13 +16,12 @@ public class Main {
 		cnt = 0;
 		
 		exp(0, 0, (int)Math.pow(2, N));
-		System.out.println(cnt);
 	}
 	
 	public static void exp(int r, int c, int size) {
 		if(r == R && c == C) {
 			System.out.println(cnt);
-			System.exit(0);
+			return;
 		}
 		if(size == 1) {
 			cnt++;
