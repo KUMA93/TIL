@@ -3,34 +3,28 @@ input = sys.stdin.readline
 
 n = int(input())
 status = [list(map(int, input().split())) for _ in range(n)]
-visited = [0]*n
-minGap = 2147000000
+minGap = sys.maxsize
 
-# 두 팀 능력치 합 차이 계산
-def score():
-    global minGap
-    start = 0
-    link = 0
+def scoring(team):
+    score = 0
+    for player1 in team:
+        for player2 in team:
+            score += status[player1][player2] + status[player2][player1]
+    return score
 
-    for i in range(n-1):
-        for j in range(i+1, n):
-            if visited[i] and visited[j]:
-                start += status[i][j] + status[j][i]
-            elif not visited[i] and not visited[j]:
-                link += status[i][j] + status[j][i]
-    gap = abs(start - link)
-    minGap = min(gap, minGap)
+# teamA , teamB 나누기
+for subset in range(1, (1 << n) - 1):
+    teamA = []
+    teamB = []
+    for i in range(n):
+        if subset & (1 << i):
+            teamA.append(i)
+        else:
+            teamB.append(i)
 
-def teaming(cnt):
-    # 기저 조건 도달 시
-    if cnt == n:
-        score()
-        return
-    visited[cnt] = 1
-    teaming(cnt + 1)
-    visited[cnt] = 0
-    teaming(cnt + 1)
+    # 점수 산출
+    sumA = scoring(teamA)
+    sumB = scoring(teamB)
+    minGap = min(minGap, abs(sumA - sumB))
 
-teaming(0)
-
-print(minGap)
+print(minGap//2)
