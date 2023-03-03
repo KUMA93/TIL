@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Solution {
@@ -69,22 +70,39 @@ public class Solution {
             permutation(cnt + 1);
         }
     }
-
+    
+    private static Stack<Integer> stack = new Stack<>();
+    
     private static void drop(int[][] m) {
-        for (int i = H-2; i >= 0; i--){
-            for (int j = 0; j < W; j++) {
-                if(m[i][j] > 0 && m[i+1][j] == 0){
-                    int k = 1;
-                    while(i+k < H) {
-                        if(m[i+k][j] == 0) k++;
-                        else break;
-                    }
+    	// 스택 활용 코드
+    	for (int c = 0; c < W; c++) {
+    		for (int r = 0; r < H; r++) {
+    			if(m[r][c] > 0) {
+    				stack.push(m[r][c]);
+    				m[r][c] = 0;
+    			}
+    		}
+    		int r = H-1;
+    		while(!stack.isEmpty()) {
+    			m[r--][c] = stack.pop();
+    		}
+    	}
 
-                    m[i+k-1][j] = m[i][j];
-                    m[i][j] = 0;
-                }
-            }
-        }
+    	// 내코드
+//        for (int i = H-2; i >= 0; i--){
+//            for (int j = 0; j < W; j++) {
+//                if(m[i][j] > 0 && m[i+1][j] == 0){
+//                    int k = 1;
+//                    while(i+k < H) {
+//                        if(m[i+k][j] == 0) k++;
+//                        else break;
+//                    }
+//
+//                    m[i+k-1][j] = m[i][j];
+//                    m[i][j] = 0;
+//                }
+//            }
+//        }
     }
 
     public static void breakBrick(int y, int[][] m) {
