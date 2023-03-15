@@ -38,13 +38,12 @@ def bfs(dq):
             ny = cy + dy[i]
             if 0 <= nx < N and 0 <= ny < M:
                 if (board[nx][ny] == 1 or board[nx][ny] == 2) and visited[nx][ny] != INF and visited[nx][ny] == 0 :
-                    if visited[nx][ny] == 0:
-                        if c == 'G':
-                            visited[nx][ny] = visited[cx][cy] + 1
-                            dq.append((nx, ny, c))
-                        elif c == 'R':
-                            visited[nx][ny] = visited[cx][cy] - 1
-                            dq.append((nx, ny, c))
+                    if c == 'G':
+                        visited[nx][ny] = visited[cx][cy] + 1
+                        dq.append((nx, ny, c))
+                    elif c == 'R':
+                        visited[nx][ny] = visited[cx][cy] - 1
+                        dq.append((nx, ny, c))
                 elif visited[nx][ny] * visited[cx][cy] < 0 and abs(visited[nx][ny]) == abs(visited[cx][cy]) + 1:
                     visited[nx][ny] = INF
                     cnt += 1
