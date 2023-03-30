@@ -44,24 +44,23 @@ public class Main {
 			}
 			
 			visited[0][0] = map[0][0];
-			PriorityQueue<pos> q = new PriorityQueue<>((o1, o2) -> o1.val - o2.val);
-			q.add(new pos(0, 0, map[0][0]));
 			
-			while(!q.isEmpty()) {
-				pos cur = q.poll();
-				
-				for (int i = 0; i < 4; i++) {
-					int nx = cur.x + dx[i];
-					int ny = cur.y + dy[i];
-					
-					if (isInMap(nx, ny)) {
-						if (cur.val + map[nx][ny] < visited[nx][ny]) {
-							visited[nx][ny] = cur.val + map[nx][ny];
-							q.add(new pos(nx, ny, visited[nx][ny]));
+			for (int p = 0; p < 4; p++) {
+				for (int i = 0; i < N; i++) {
+					for (int j = 0; j < N; j++) {
+						for (int d = 0; d < 4; d++) {
+							int nx = i + dx[d];
+							int ny = j + dy[d];
+							
+							if (isInMap(nx, ny)) {
+								visited[nx][ny] = Math.min(visited[nx][ny], map[nx][ny] + visited[i][j]);
+							}
 						}
+						
 					}
 				}
 			}
+			
 			
 			System.out.printf("Problem %d: %d\n", TC, visited[N-1][N-1]);
 		}
