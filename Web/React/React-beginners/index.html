@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="root"></div>
+    </body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script>
+        const root = document.getElementById("root");
+        // "" 사이에는 생성하고자하는 태그의 이름이 들어간다.
+        // 두 번째 argument에는 태그 안에 속성으로 주고 싶은 값을 넣어준다.
+        // 세 번째 argument에는 태그 안의 내용을 넣어준다.
+        const h3 = React.createElement(
+            "h3",
+            {
+                onMouseEnter: () => console.log("mouse enter"),
+            },
+            "Hello I'm a span");
+        const btn = React.createElement("button", 
+            {
+                onClick: () => console.log("i'm clicked"),
+                style: {
+                    backgroundColor: "tomato",
+                },
+            }, 
+            "Click me");
+        const container = React.createElement("div", null, [h3, btn]);
+        ReactDOM.render(container, root);
+    </script>
+</html>
