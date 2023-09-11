@@ -50,9 +50,7 @@
 * Python의 문법을 이해하고 활용할 수 있으며 알고리즘 및 자료구조를 활용해서 문제를 해결할 수 있습니다. 또한 간단한 플라스크 서버를 구축해본 경험이 있습니다.
 
 <!--JavaScript-->
-<img src="https://img.shields.io/badge/javascript-000000?style=for-the-badge&logo=javascript&logoColor=white"/>
-<!--TypeScript-->
-<img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/javascript-000000?style=for-the-badge&logo=javascript&logoColor=white"/><!--TypeScript--><img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
 
 * ES6의 문법을 이해하고 활용할 수 있으며 JS의 타입을 지정하여 예기치 못한 에러를 방지하는 TypeScript를 사용하여 코드에 적용할 수 있습니다.
 
@@ -68,9 +66,7 @@
 * SSAFY에서 Spring Boot에 대한 교육을 이수했고 Spring Boot에 내장된 다양한 기능을 사용해본 경험이 있고 서버를 구축해 팀프로젝트를 진행한 경험이 있습니다. 
 
 <!--JPA-->
-<img src="https://img.shields.io/badge/jpa-000000?style=for-the-badge&logo=jpa&logoColor=white"/>
-<!--MyBatis-->
-<img src="https://img.shields.io/badge/MyBatis-F7A126?style=for-the-badge&logo=MyBatis&logoColor=white"/>
+<img src="https://img.shields.io/badge/jpa-000000?style=for-the-badge&logo=jpa&logoColor=white"/><!--MyBatis--><img src="https://img.shields.io/badge/MyBatis-F7A126?style=for-the-badge&logo=MyBatis&logoColor=white"/>
 
 * MyBatis를 통해 동적 쿼리를 작성할 수 있습니다. 이를 통해 조건에 맞는 검색 기능을 구현한 경험이 있습니다.
 * JPA의 관계형 데이터베이스와 객체 간 매핑에 대한 개념을 이해하고 양방향 매핑을 할 수 있습니다. 또한 JPQL, QueryDSL을 사용해 보다 복잡한 쿼리도 작성할 수 있습니다.
@@ -88,17 +84,13 @@
 * SSAFY에서 Vue.js에 대한 교육을 이수했고 컴포넌트 구성, axios를 통한 api 호출, Vuex를 사용한 상태관리를 할 수 있습니다.
 
 <!--React.js-->
-<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
-<!--Redux-->
-<img src="https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=redux&logoColor=white"/>
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"/><!--Redux--><img src="https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=redux&logoColor=white"/>
 
 * React에서 제공하는 여러 라이브러리를 사용할 수 있고, axios를 통한 api 호출, Redux를 사용한 상태관리를 할 수 있습니다.
 * 모달, 그래프 생성, 
 
 <!--HTML-->
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-<!--CSS-->
-<img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/><!--CSS--><img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 
 * HTML과 CSS를 활용해서 각 요소를 구성하고 스타일을 편집할 수 있습니다. 전역 스타일 설정과 각 요소 scope의 스타일 설정을 할 수 있습니다.
 
@@ -110,11 +102,7 @@
 
 ### Tools
 <!--IntelliJ-->
-<img src="https://img.shields.io/badge/intellij%20idea-000000?style=for-the-badge&logo=intellijidea&logoColor=white"/>
-<!--Eclise-->
-<img src="https://img.shields.io/badge/visual%20studio%20code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
-<!--VisualStudioCode-->
-<img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=Eclipse%20IDE&logoColor=white">
+<img src="https://img.shields.io/badge/intellij%20idea-000000?style=for-the-badge&logo=intellijidea&logoColor=white"/><!--Eclise--><img src="https://img.shields.io/badge/visual%20studio%20code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><!--VisualStudioCode--><img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=Eclipse%20IDE&logoColor=white">
 
 * 자바의 경우 IntelliJ, Eclipse를 활용해서 코드를 생성, 수정할 수 있고 단축키를 숙지하고 있습니다.
 * 파이썬과 프론트 코드를 생성, 수정하기 위해 Visual Studio Code를 사용합니다.
