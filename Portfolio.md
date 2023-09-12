@@ -1,28 +1,22 @@
-![header](https://capsule-render.vercel.app/api?type=Waving&color=879CDF&height=400&width=100%&fontSize=35&fontColor=ffffff&animation=fadeIn)
-
-<h1 align='center' style="color:#337ea9">
+<img src="./img/사진.jpg" width="20%" align="center" style="display:block; margin-left:auto; margin-right:auto">
+<br/>
+<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">
     😀발전하는 개발자, 최규헌입니다.
 </h1>
-
-<div style="width:50%; float:left">
         
-<h3>🏫교육 수료 내용</h3>
+### 🏫교육 수료 내용
 
-<b>Seoul National University of Technology - Computer Science & Engineering<br/>2013.03 ~ 2020.08</b>
+#### Seoul National University of Technology - Computer Science & Engineering<br/>2013.03 ~ 2020.08
 
-<b>SSAFY 9th<br/>2023.01 ~ </b>
+#### SSAFY 9th<br/>2023.01 ~ </h4>
+<br/>
 
-</div>
-<div style="width:50%; float:right">
+### 🌸수상 내용
 
-<h3>🌸수상 내용</h3> 
+#### 삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 최우수상
+#### 삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 UCC 우수상
 
-<b>삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 최우수상</b><br/><br/>
-<b>삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 UCC 우수상</b><br/><br/><br/>
-
-</div>
-
-<div>
+<br/>
 
 ### ⭐웹 페이지
 
@@ -32,7 +26,7 @@
 
 </h4>
 
-</div>
+
 
 <br/>
 
@@ -45,9 +39,9 @@
 
 <br/><br/><br/>
 
-<h1 align='center' style="color:#337ea9">💻Skills</h1>   
+<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">💻Skills</h1>   
 
-### Languages
+### ***Languages***
 <!--Java-->
 <img src="https://img.shields.io/badge/JAVA-FE6F69?style=for-the-badge&logo=JAVA&logoColor=white">
 
@@ -62,7 +56,9 @@
 
 * ES6의 문법을 이해하고 활용할 수 있으며 JS의 타입을 지정하여 예기치 못한 에러를 방지하는 TypeScript를 사용하여 코드에 적용할 수 있습니다.
 
-### Back-End
+<br/>
+
+### ***Back-End***
 <!--Spring Framework-->
 <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
 
@@ -85,7 +81,9 @@
 
 * MySQL의 계정이나 Transaction의 Isolation level에 대해 이해하고 있으며 설정할 수 있습니다. DDL, DML, TCL을 의도에 맞게 작성할 수 있습니다.
 
-### Front-End
+<br/><br/>
+
+### ***Front-End***
 <!--Vue.js-->
 <img src="https://img.shields.io/badge/vuedotjs-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white"/>
 
@@ -107,8 +105,9 @@
 
 * 부트스트랩 라이브러리의 각 요소와 b 태그 안의 속성들에 대해서 이해하고 활용할 수 있습니다.
 
+<br/>
 
-### Tools
+### ***Tools***
 <!--IntelliJ-->
 <img src="https://img.shields.io/badge/intellij%20idea-000000?style=for-the-badge&logo=intellijidea&logoColor=white"/><!--Eclise--><img src="https://img.shields.io/badge/visual%20studio%20code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><!--VisualStudioCode--><img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=Eclipse%20IDE&logoColor=white">
 
@@ -125,9 +124,9 @@
 
 * 일정 관리를 위해 JIRA를 사용합니다. JQL에 대해 이해하고 필터와 대시보드를 생성 및 활용할 수 있습니다.
 
-<br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
-<h1 align='center' style="color:#337ea9">📔Project Experiences</h1>
+<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">📔Project Experiences</h1>
 
 ## ***VODA***
 
@@ -147,6 +146,8 @@
 ### 아키텍처
 <img src="./img/보다아키텍쳐.png" width=700px>
 
+<br/><br/><br/>
+
 ### 사용한 기술
 * Back-End - Spring Boot, JPA, MyBatis, MySQL
 * Front-End - React.js, Redux
@@ -157,6 +158,7 @@
 * 효율적인 개발을 위해 팀 컨벤션을 적극 사용했으며 Jira를 통한 일정관리를 통해 어느 한 명도 뒤쳐지지 않는 결과를 낼 수 있었습니다.
 * 형상관리, 일정관리에 더해 트러블슈팅이나 회의같은 다른 항목들도 문서화하고 기록함으로써 협업에서의 중요한 부분, 마인드셋을 배울 수 있었습니다.
 
+<br/><br/>
 
 ## ***TripMate***
 
@@ -180,10 +182,8 @@
 
 ### 회고
 * 팀원도 2명이고 일주일 간의 짧은 시간 내에 완성한 간단한 프로젝트였지만 배운 것을 통해 능동적으로 결과물을 만들어 내는 것이 주는 즐거움을 깨달았습니다.
-* 개발자로서 진행해 본 프론트엔드와 백엔드가 완성된 첫 프로젝트여서 애착도 많이 갔습니다. 이론적으로 학습한 것과 
+* 개발자로서 진행해 본 프론트엔드와 백엔드가 완성된 첫 프로젝트여서 애착도 많이 갔습니다. 이론적으로 학습한 것과 실제 프로젝트를 진행하면서 코드를 작성할 때의 어려움이 다르다는 것을 느꼈습니다.
 
-
-## BlueDot
 
 
 
