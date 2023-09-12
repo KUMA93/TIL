@@ -1,22 +1,28 @@
-![header](https://capsule-render.vercel.app/api?type=Waving&color=879CDF&height=400&width=100%&text=Developer%20Kyuheon&fontSize=35&fontColor=ffffff&animation=fadeIn)
+![header](https://capsule-render.vercel.app/api?type=Waving&color=879CDF&height=400&width=100%&fontSize=35&fontColor=ffffff&animation=fadeIn)
 
 <h1 align='center' style="color:#337ea9">
     😀발전하는 개발자, 최규헌입니다.
 </h1>
 
-### 🏫교육 수료 내용
+<div style="width:50%; float:left">
+        
+<h3>🏫교육 수료 내용</h3>
 
-<h4>Seoul National University of Technology - Computer Science & Engineering<br/>2013.03 ~ 2020.08</h4>
+<b>Seoul National University of Technology - Computer Science & Engineering<br/>2013.03 ~ 2020.08</b>
 
-<h4>SSAFY 9th<br/>2023.01 ~ </h4>
-<br/>
+<b>SSAFY 9th<br/>2023.01 ~ </b>
 
-### 🌸수상 내용
+</div>
+<div style="width:50%; float:right">
 
-<h4>삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 최우수상</h4>
-<h4>삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 UCC 우수상</h4>
+<h3>🌸수상 내용</h3> 
 
-<br/>
+<b>삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 최우수상</b><br/><br/>
+<b>삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 UCC 우수상</b><br/><br/><br/>
+
+</div>
+
+<div>
 
 ### ⭐웹 페이지
 
@@ -25,6 +31,8 @@
 [Github](github.com/kuma93)
 
 </h4>
+
+</div>
 
 <br/>
 
