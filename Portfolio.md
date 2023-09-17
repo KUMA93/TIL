@@ -1,24 +1,24 @@
 <img src="./img/사진.jpg" width="20%" align="center" style="display:block; margin-left:auto; margin-right:auto">
 <br/>
 <h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">
-    😀발전하는 개발자, 최규헌입니다.
+    발전하는 개발자, 최규헌입니다.
 </h1>
         
-### 🏫교육 수료 내용
+### 교육 수료 내용
 
 #### Seoul National University of Technology - Computer Science & Engineering<br/>2013.03 ~ 2020.08
 
 #### SSAFY 9th<br/>2023.01 ~ </h4>
 <br/>
 
-### 🌸수상 내용
+### 수상 내용
 
 #### 삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 최우수상
 #### 삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 UCC 우수상
 
 <br/>
 
-### ⭐웹 페이지
+### 웹 페이지
 
 <h4>
 
@@ -30,7 +30,7 @@
 
 <br/>
 
-### 🌱어제보다 더 많이 알고, 더 잘 하기 위해 노력하는 신입 백엔드 개발자 최규헌입니다.
+### 어제보다 더 많이 알고, 더 잘 하기 위해 노력하는 신입 백엔드 개발자 최규헌입니다.
 
 * JSP나 Servlet을 활용한 프로젝트부터 SpringBoot, JPA, React를 활용한 프로젝트까지 수행해 본 경험이 있습니다. 
 * 많은 사용자가 만족할 수 있는 서비스를 만드는 개발자가 되는 것이 목표입니다.
@@ -39,7 +39,7 @@
 
 <br/><br/><br/>
 
-<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">💻Skills</h1>   
+<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">Skills</h1>   
 
 ### ***Languages***
 <!--Java-->
@@ -126,7 +126,7 @@
 
 <br/><br/><br/><br/><br/><br/>
 
-<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">📔Project Experiences</h1>
+<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">Project Experiences</h1>
 
 ## ***VODA***
 
