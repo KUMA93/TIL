@@ -22,7 +22,7 @@
 
 <h4>
 
-[Github](github.com/kuma93)
+[Github](https://github.com/kuma93)
 
 </h4>
 
