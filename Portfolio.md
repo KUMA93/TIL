@@ -1,28 +1,28 @@
 <img src="./img/사진.jpg" width="20%" align="center" style="display:block; margin-left:auto; margin-right:auto">
 <br/>
 <h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">
-    😀발전하는 개발자, 최규헌입니다.
+    발전하는 개발자, 최규헌입니다.
 </h1>
         
-### 🏫교육 수료 내용
+### ***교육 수료 내용***
 
 #### Seoul National University of Technology - Computer Science & Engineering<br/>2013.03 ~ 2020.08
 
 #### SSAFY 9th<br/>2023.01 ~ </h4>
 <br/>
 
-### 🌸수상 내용
+### ***수상 내용***
 
 #### 삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 최우수상
 #### 삼성 청년 소프트웨어 아카데미(SSAFY) 공통 프로젝트 UCC 우수상
 
 <br/>
 
-### ⭐웹 페이지
+### ***웹 페이지***
 
 <h4>
 
-[Github](github.com/kuma93)
+[Github](https://github.com/kuma93)
 
 </h4>
 
@@ -39,7 +39,7 @@
 
 <br/><br/><br/>
 
-<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">💻Skills</h1>   
+<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">Skills</h1>   
 
 ### ***Languages***
 <!--Java-->
@@ -126,12 +126,12 @@
 
 <br/><br/><br/><br/><br/><br/>
 
-<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">📔Project Experiences</h1>
+<h1 align='center' style="color:#337ea9; font-style: italic; font-weight: bolder">Project Experiences</h1>
 
 ## ***VODA***
 
 ### 프로젝트 개요 & 주요 기능
-[Github](https://github.com/KUMA93/VODA)
+[Github](https://github.com/project-VODA/VODA)
 * 2023.07.04 ~ 2023.08.18
 * 시각장애인의 영상통화간 상대의 표정을 분석해서 안내해주거나 상대가 자신의 표정을 보낼 수 있는 비언어적 소통을 돕는 서비스입니다.
 * 시각장애인 복지관에서 인터뷰 진행 후 색상 인식 서비스를 추가 했습니다.
@@ -155,10 +155,9 @@
 ### 회고
 * 실제 사용자인 시각장애인 복지관에 찾아가서 인터뷰를 진행할 만큼 몰입해서 진행한 프로젝트였습니다.
 * 팀원 6인으로 진행했으나 Front-End를 해본 인원이 없어 모두가 생소한 기술을 열정 하나로 학습과 실제 결과물까지 낼 수 있었습니다.
+* Front-End와 Back-End 모두 개발한 경험을 통해 프로젝트의 전체에 대한 이해도가 깊어졌고 이 경험은 앞으로 큰 자산이 될 것 같습니다. 
 * 효율적인 개발을 위해 팀 컨벤션을 적극 사용했으며 Jira를 통한 일정관리를 통해 어느 한 명도 뒤쳐지지 않는 결과를 낼 수 있었습니다.
 * 형상관리, 일정관리에 더해 트러블슈팅이나 회의같은 다른 항목들도 문서화하고 기록함으로써 협업에서의 중요한 부분, 마인드셋을 배울 수 있었습니다.
-
-<br/>
 
 ## ***TripMate***
 
