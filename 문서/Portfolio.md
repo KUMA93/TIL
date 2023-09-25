@@ -22,7 +22,7 @@
 * Jira Leader - 장, 단기 과제 선정 및 과제 분배 
 
 ### 아키텍처
-<img src="../img/보다아키텍쳐.png" width=700px>
+<img src="../img/보다아키텍쳐.png" width=500px>
 
 ### 사용한 기술
 * Back-End - Spring Boot, JPA, MyBatis, MySQL
