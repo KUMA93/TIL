@@ -165,7 +165,7 @@
 <br/><br/><br/>
 
 ## ***ChartFlow***
-
+[Github](https://github.com/KUMA93/ChartFlow)
 ### 프로젝트 개요 & 주요 기능
 * 2023.08.28 ~ 2023.10.06
 * 주식 입문자를 위한 차트 기반의 **모의 투자** 시뮬레이션 서비스
@@ -177,12 +177,15 @@
 * 프로젝트 기획 - 차트 게임 기능 기획, 칭호 획득 방식 기획
 * Jira Leader - 장, 단기 과제 선정 및 과제 분배 
 
+<br/><br/><br/><br/><br/>
+
 ### 아키텍처
 <img src="./img/차트플로우아키텍처.PNG" width="500px" />
 
 ### 사용한 기술
-* Back-End - Spring Boot, JPA, MySQL
+* Back-End - Spring Boot, JPA, MySQL, Redis
 * Front-End - React.js, Amcharts
+* Infra - EC2, Jenkins
 
 ### 회고
 * 시기가 하반기 공채와 겹쳤기 때문에 취업 위주의 스케쥴 진행 이슈로 완성도가 다소 아쉬운 프로젝트였습니다.
@@ -197,6 +200,8 @@
 [Github](https://github.com/KUMA93/TripMate)
 * 2023.05.18 ~ 2023.05.25
 * 엔데믹 상황에서의 국내 여행 수요 증가에 부합하는 지도 기반 **여행지 추천, 여행지 평가, 지역별 날씨 정보 서비스**입니다.
+
+<br/><br/>
 
 ### **수행한 역할**
 * Back-End - 회원 기능 전반, 핫플레이스(관광지 추천 게시판 CRUD), 
