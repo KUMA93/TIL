@@ -151,7 +151,8 @@
 
 ### **사용한 기술**
 * Back-End - Spring Boot, JPA, MyBatis, MySQL
-* Front-End - React.js, Redux
+* Front-End - React.js, Redux, WebRTC
+* AI - TF; Face-api.js, OpenCV, Yolo V5
 
 ### **회고**
 * 실제 사용자인 **시각장애인 복지관에 찾아가서 인터뷰를 진행**할 만큼 열정을 가지고 진행한 프로젝트였습니다.
