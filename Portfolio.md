@@ -45,7 +45,7 @@
 <!--Java-->
 <img src="https://img.shields.io/badge/JAVA-FE6F69?style=for-the-badge&logo=JAVA&logoColor=white">
 
-* 삼성 청년 소프트웨어 아카데미(이하 SSAFY)에서 Java에 대한 교육을 이수했고 Java의 문법을 이해하고 활용할 수 있으며 JVM의 동작 방식과 GC의 동작 원리, 디자인패턴을 이해하고 있습니다. 서버를 구축할 때 SpringBoot, JPA 등 Java 기반의 프레임워크를 주로 사용 했습니다.
+* 삼성 청년 소프트웨어 아카데미(이하 SSAFY)에서 Java에 대한 교육을 이수했고 Java의 문법을 이해하고 활용할 수 있으며 JVM의 동작 방식과 GC의 동작 원리, 메모리 영역, 디자인패턴, 객체지향 프로그래밍을 이해하고 있습니다. 서버를 구축할 때 SpringBoot, JPA 등 Java 기반의 프레임워크를 주로 사용 했습니다.
 <!--Python-->
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>
 
@@ -67,19 +67,20 @@
 <!--Spring Boot-->
 <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
 
-* SSAFY에서 Spring Boot에 대한 교육을 이수했고 Spring Boot에 내장된 다양한 기능을 사용해본 경험이 있고 서버를 구축해 팀프로젝트를 진행한 경험이 있습니다. 
+* SSAFY에서 Spring Boot에 대한 교육을 이수했고 Spring Boot에 내장된 다양한 기능을 사용해본 경험이 있고 여러 팀프로젝트의 서버를 구축한 진행한 경험이 있습니다.
 
 <!--JPA-->
 <img src="https://img.shields.io/badge/jpa-000000?style=for-the-badge&logo=jpa&logoColor=white"/><!--MyBatis--><img src="https://img.shields.io/badge/MyBatis-F7A126?style=for-the-badge&logo=MyBatis&logoColor=white"/>
 
 * MyBatis를 통해 동적 쿼리를 작성할 수 있습니다. 이를 통해 조건에 맞는 검색 기능을 구현한 경험이 있습니다.
 * JPA의 관계형 데이터베이스와 객체 간 매핑에 대한 개념을 이해하고 양방향 매핑을 할 수 있습니다. 또한 JPQL, QueryDSL을 사용해 보다 복잡한 쿼리도 작성할 수 있습니다.
-* 주로 프로젝트를 진행할 때 JPA와 MyBatis를 혼용하는 식으로 사용했습니다.
 
-<!--MySQL-->
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
+<!--MySQL, Redis-->
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"><img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=Redis&logoColor=white">
 
-* MySQL의 계정이나 Transaction의 Isolation level에 대해 이해하고 있으며 설정할 수 있습니다. DDL, DML, TCL을 의도에 맞게 작성할 수 있습니다.
+* MySQL의 Transaction의 Isolation level에 대해 이해하고 있으며 설정할 수 있습니다. DDL, DML, TCL을 의도에 맞게 작성할 수 있습니다. 인덱스에 대해서 이해하고 필요한 테이블에 설정합니다.
+* Redis를 활용해 JWT Access Token을 저장해서 활용하거나 조회가 잦은 테이블의 캐싱처리를 할 수 있습니다.
+
 
 <br/><br/>
 
@@ -172,7 +173,7 @@
 * 주식 입문자를 위한 차트 기반의 **모의 투자** 시뮬레이션 서비스
 * 게이미피케이션의 요소로 **랭킹**, **칭호** 등의 기능을 제공하며 커뮤니티 기능이 존재
 
-### **역할**
+### **수행한 역할**
 * Back-End - 회원 기능(회원가입, 메일 인증, 임시 비밀번호 발급), 댓글(CRUD), 대댓글(CRUD), 차트게임(매수, 매도, 스킵, 턴 종료, 게임 생성, 게임 정보 조회, 차트 정보 조회) api 구현
 * Front-End - 구현한 api에 대한 axios 연동
 * 프로젝트 기획 - 차트 게임 기능 기획, 칭호 획득 방식 기획
@@ -190,7 +191,8 @@
 
 ### **회고**
 * 시기가 하반기 공채와 겹쳤기 때문에 취업 위주의 스케쥴 진행 이슈로 완성도가 다소 아쉬운 프로젝트였습니다.
-* 방대한 데이터를 다뤘기 때문에 DB상에서 **인덱스를 관리하여 성능을 80% 이상 개선**했습니다.
+* 300만 개 이상의 주식 데이터를 가공하고 다뤘기 때문에 DB상에서 **인덱스를 관리하여 성능을 70% 이상 개선**했습니다.
+* 올바른 
 * 후에 여유가 생긴다면 개인적으로 기능들의 예외처리, 기록들에 대한 api 연동, 권한 설정에 대해 추가 진행할 예정입니다.
 
 <br/><br/><br/>
