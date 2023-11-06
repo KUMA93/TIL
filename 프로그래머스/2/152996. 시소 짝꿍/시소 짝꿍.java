@@ -1,42 +1,48 @@
 import java.util.*;
-    class Solution {
+class Solution {
+
+        static long answer;
+        static int[] selected;
 
         public long solution(int[] weights) {
-            long answer = 0;
+            answer = 0;
 
-            int[] origin = new int[1001];
-            int[] multiWeight = new int[4001];
+            Map<Integer, Integer> candidate = new HashMap<>();
 
             // 몸무게 저장
             for (int i = 0; i < weights.length; i++) {
-                int w = weights[i];
-
-                // 중복 확인
-                long dup = origin[w];
-
-                int w2 = w * 2;
-                int w3 = w * 3;
-                int w4 = w * 4;
-
-                if (dup > 0) {
-                    answer += dup;
-
-                    answer += multiWeight[w2] - dup;
-                    answer += multiWeight[w3] - dup;
-                    answer += multiWeight[w4] - dup;
-                } else {
-                    answer += multiWeight[w2];
-                    answer += multiWeight[w3];
-                    answer += multiWeight[w4];
-                }
-
-                origin[w]++;
-                multiWeight[w2]++;
-                multiWeight[w3]++;
-                multiWeight[w4]++;
+                if (candidate.get(weights[i]) == null) candidate.put(weights[i], 1);
+                else candidate.put(weights[i], candidate.get(weights[i]) + 1);
             }
 
+            for (int x : candidate.values()){
+                answer += (long)x * (x - 1) / 2;
+            }
+
+            List<Integer> origin = new ArrayList<>(candidate.keySet());
+
+            selected = new int[2];
+            combination(origin, candidate, 0, 0);
+
             return answer;
+        }
+
+        public void combination(List<Integer> origin, Map<Integer, Integer> cand, int cnt, int start) {
+            if (cnt == 2) {
+                int w1 = selected[0];
+                int w2 = selected[1];
+
+                if (w1*2 == w2*3 || w1*2 == w2*4 || w1*3 == w2*2 || w1*3 == w2*4 || w1*4 == w2*2 || w1*4 == w2*3) {
+                    if (cand.get(w1) > 1 || cand.get(w2) > 1) answer +=  (long)cand.get(w1) * cand.get(w2);
+                    else answer++;
+                }
+
+                return;
+            }
+            for (int i = start; i < origin.size(); i++) {
+                selected[cnt] = origin.get(i);
+                combination(origin, cand, cnt+1, i+1);
+            }
         }
 
     }
