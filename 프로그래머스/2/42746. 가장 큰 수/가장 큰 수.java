@@ -23,13 +23,18 @@ class Solution {
         
         // 가장 큰 수 만들 경우로 정렬
         for (int i = 0; i < 10; i++) {
-            Collections.sort(tmp[i], new Comparator<Integer>() {
-                @Override
-                public int compare(Integer o1, Integer o2) {
-                    String combined1 = o1.toString() + o2.toString();
-                    String combined2 = o2.toString() + o1.toString();
-                    return combined2.compareTo(combined1);
-                }
+            // Collections.sort(tmp[i], new Comparator<Integer>() {
+            //     @Override
+            //     public int compare(Integer o1, Integer o2) {
+            //         String combined1 = o1.toString() + o2.toString();
+            //         String combined2 = o2.toString() + o1.toString();
+            //         return combined2.compareTo(combined1);
+            //     }
+            // });
+            
+            Collections.sort(tmp[i], (o1, o2) -> {
+                String numStr1 = o1.toString(), numStr2 = o2.toString();
+                return -Integer.compare(Integer.parseInt(numStr1 + numStr2), Integer.parseInt(numStr2 + numStr1));
             });
         }
         
