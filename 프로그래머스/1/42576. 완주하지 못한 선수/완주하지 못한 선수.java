@@ -1,13 +1,6 @@
 import java.util.*;
 
 class Solution {
-    /**
-    **  10만명 선수
-    **  완주자는 참여자의 길이보다 1 작다 - 한 명만 완주 못함
-    **  이름은 20개 이하 알파벳 소문자
-    **  동명이인 존재 가능
-    **  완주하지 못한 사람 리턴
-    **/
     
     public String solution(String[] participant, String[] completion) {
         String answer = "";
