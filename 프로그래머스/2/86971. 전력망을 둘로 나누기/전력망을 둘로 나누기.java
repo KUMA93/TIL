@@ -53,10 +53,6 @@ class Solution {
             answer = Math.min(answer, Math.abs(vals.get(0) - vals.get(1)));
         }
         
-
-        
-
-        
         
         return answer;
     }
