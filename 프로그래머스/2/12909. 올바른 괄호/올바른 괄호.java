@@ -11,7 +11,7 @@ class Solution {
             
             if (now == '(') dq.offer(now);
             else {
-                if (dq.isEmpty()) {
+                if (dq.isEmpty() ) {
                     answer = false;
                     break;
                 }else {
@@ -31,5 +31,16 @@ class Solution {
         }
 
         return answer;
+//         int count = 0;
+        
+//         for (char c : s.toCharArray()) {
+//             if (c == '(') count++;
+//             else {
+//                 if (count == 0) return false; // 닫는 괄호가 먼저 나오면 false 반환
+//                 count--;
+//             }
+//         }
+        
+//         return count == 0; // 모든 괄호가 쌍을 이루었는지 확인
     }
 }
