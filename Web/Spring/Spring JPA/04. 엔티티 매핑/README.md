@@ -169,6 +169,7 @@ public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; 
+}
 ```
 
 ## SEQUENCE 전략 - 특징
@@ -187,6 +188,7 @@ public class Member {
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
     generator = "MEMBER_SEQ_GENERATOR")
     private Long id; 
+}
 ```
 
 ## SEQUENCE - @SequenceGenerator 속성
@@ -198,7 +200,6 @@ public class Member {
 * 모든 데이터베이스에 적용가능하지만 성능이 떨어진다.
 
 ## TABLE 전략 - 매핑
-
 ```java
 // Member 클래스에 어노테이션 추가
 @Entity
@@ -211,6 +212,7 @@ public class Member {
     @GeneratedValue(strategy = GenerationType.TABLE,
     generator = "MEMBER_SEQ_GENERATOR")
     private Long id; 
+}
 
 // SQL 쿼리문 생성됨
 create table MY_SEQUENCES (
@@ -218,6 +220,7 @@ create table MY_SEQUENCES (
     next_val bigint,
     primary key ( sequence_name )
 )
+
 ```
 
 ## TABLE - @TableGenerator 속성

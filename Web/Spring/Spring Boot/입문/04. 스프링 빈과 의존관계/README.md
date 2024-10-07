@@ -44,7 +44,7 @@
 
 
 ## 2. **자바 코드로 직접 스프링 빈 등록하기**
-* [SpringConfig 코드](../hello-spring/src/main/java/hello/hellospring/service/SpringConfig.java)]
+* [SpringConfig 코드](../hello-spring/src/main/java/hello/hellospring/service/SpringConfig.java)
 * 따로 SpringConfig 클래스를 만들어서 의존관계를 주입해준다.
     ```java
     @Configuration
